@@ -1,6 +1,7 @@
 FROM tomcat:8.0-alpine
 
-RUN mkdir /data
+RUN mkdir -p /data/appdatas/cat
+RUN mkdir -p /data/applogs/cat
 RUN chmod 777 /data/ -R
 
 COPY ./datasources.xml /data/appdatas/cat/datasources.xml
