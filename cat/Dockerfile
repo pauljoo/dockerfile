@@ -1,4 +1,4 @@
-FROM tomcat:8.0-alpine
+FROM tomcat:8.0-jre8-alpine
 
 RUN mkdir -p /data/appdatas/cat
 RUN mkdir -p /data/applogs/cat
