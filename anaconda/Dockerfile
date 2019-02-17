@@ -13,5 +13,6 @@ RUN chmod 755 /home/*.sh
 RUN yum install -y bzip2
 RUN /home/Anaconda3-2018.12-Linux-x86_64.sh -b
 
+ENV PATH /root/anaconda3/bin:$PATH
 # 定义输出命令
 #CMD ["/run.sh"]
