@@ -3,6 +3,7 @@ FROM python:3.8.2
 MAINTAINER pauljiang <jianghuiyao@outlook.com>
 
 ADD obfsproxy.tar.gz /data/
+ADD bootstrap.sh /data/bootstrap.sh
 
 RUN apt-get update && apt-get install -y python-twisted python-pyptlib python-crypto python-yaml
 
