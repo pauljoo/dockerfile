@@ -16,6 +16,7 @@ htpasswd -c -d /etc/squid/passwd <username>
 在# INSERT YOUR OWN RULE(S) HERE TO ALLOW ACCESS FROM YOUR CLIENTS下添加
 ```
 auth_param basic program /usr/lib64/squid/basic_ncsa_auth /etc/squid/passwd
+auth_param basic credentialsttl 2 hours
 acl ncsa_users proxy_auth REQUIRED
 http_access allow ncsa_users
 ```

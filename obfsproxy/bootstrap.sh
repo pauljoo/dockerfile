@@ -6,5 +6,6 @@
 MODE=$OBFSPROXY_MODE
 LISTEN=$OBFSPROXY_LISTEN
 DEST=$OBFSPROXY_DEST
+PASSWORD=$OBFSPROXY_PASSWORD
 
-/data/obfsproxy-0.2.13/bin/obfsproxy obfs3 --dest=$DEST $MODE $LISTEN
+/data/obfsproxy-0.2.13/bin/obfsproxy --data-dir=/data/scramblesuit scramblesuit --password=$PASSWORD --dest=$DEST $MODE $LISTEN
