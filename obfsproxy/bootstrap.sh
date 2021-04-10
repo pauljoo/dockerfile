@@ -7,4 +7,4 @@ MODE=$OBFSPROXY_MODE
 LISTEN=$OBFSPROXY_LISTEN
 DEST=$OBFSPROXY_DEST
 
-/data/obfsproxy/bin/obfsproxy obfs3 --dest=$DEST $MODE $LISTEN
+/data/obfsproxy-0.2.13/bin/obfsproxy obfs3 --dest=$DEST $MODE $LISTEN
